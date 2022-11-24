@@ -37,6 +37,39 @@ namespace ControllersExample.Controllers
             // return "{ \"key\": \"value\" }";
         }
 
+        // [Route("file-download")]
+        // public VirtualFileResult FileDownload()
+        // {
+        //     // return new VirtualFileResult("/sample.pdf", "application/pdf");
+        //     return File("/sample.pdf", "application/pdf");
+        // }
+
+        // [Route("file-download2")]
+        // public VirtualFileResult FileDownload2()
+        // {
+        //     return new VirtualFileResult(@"~/sample.pdf", "application/pdf");
+        // }
+
+        // [Route("file-download3")]
+        // public PhysicalFileResult FileDownload3()
+        // {
+        //     return PhysicalFile(@"C:\ControllersExample\ControllersExample\wwwroot\Sample.pdf", "application/pdf");
+        // }
+
+        // [Route("file-download4")]
+        // public FileContentResult FileDownload4()
+        // {
+        //     byte[] bytes = System.IO.File.ReadAllBytes(@"C:\ControllersExample\ControllersExample\wwwroot\Sample.pdf");
+        //     return new FileContentResult(bytes, "application/pdf");
+        // }
+
+        // [Route("file-download5")]
+        // public FileContentResult FileDownoad5()
+        // {
+        //     byte[] bytes = System.IO.File.ReadAllBytes(@"C:\ControllersExample\ControllersExample\wwwroot\Sample.pdf");
+        //     return File(bytes, "application/pdf");
+        // }
+
         [Route("contact-us/{mobile:regex(^\\d{{10}}$)}")]
         public string Contact()
         {
